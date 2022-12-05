@@ -1,0 +1,48 @@
+
+body{
+    background-color: black;
+    
+}
+
+#accordion {
+    margin: 100px auto;
+    width: 600px;
+}
+
+#accordion  li{
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+   
+    
+}
+
+
+#accordion label{
+    cursor: pointer;
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: bolder;
+    
+}
+
+#accordion label + input[type="radio"]{
+    display: none;
+}
+#accordion .content {
+    padding: 0px 15px;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+    color: black;
+    transition: height 0.4s linear;
+    
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+  height: 60px;
+
+}
